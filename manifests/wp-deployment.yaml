@@ -89,7 +89,7 @@ spec:
       volumes:
       - name: wordpress-volume
         persistentVolumeClaim:
-          claimName: wordpress-pv-claim
+          claimName: wp-pv-claim
 ---
 ##
 # Create persistent volume claim here
@@ -97,7 +97,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: wordpress-pv-claim
+  name: wp-pv-claim
   labels:
     app: wordpress
     tier: frontend
